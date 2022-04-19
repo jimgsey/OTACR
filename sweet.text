@@ -1,0 +1,502 @@
+Highlights & Device Specific Changes:
+Build type: Weekly / Beta
+Device: Redmi Note 10 Pro (sweet)
+Device maintainer: Jimgsey
+Required firmware: V13.0.4.0.SKFMIXM
+
+Highlights & Device Specific Changes:
+==================================
+
+====================
+     04-19-2022
+====================
+
+   * art
+7ee779087a art: Enable compiler/dalvikvm/dex2oat/runtime -O3
+
+   * bionic
+166161d7a bionic: Enable -O3
+
+   * device/qcom/sepolicy-legacy-um
+a7822ada sepolicy-legacy-um: poweroffalarm_app: Add power off alarm app
+5b46e54e legacy: vendor: Allow location to read wifi_hal_prop
+31edd788 sdm660: Remove overly broad init rule
+23ede551 sdm660: Remove duplicate init rule
+9ffbcb4c Label persist.vendor.bluetooth. properties
+77f4c831 Revert "sepolicy: label persist.vendor.bluetooth.a4wp"
+ddf1fab9 sepolicy: legacy: qva: Allow cnd to read wifi_hal_prop
+961d737b Sepolicy: add define for lksecapp
+9589ed82 Allow vendor_init set vendor_time_service_prop
+2170d77a sdm660: Label sysfs_uio_file
+7b177661 sdm660: Label sysfs_ssr_toggle
+709f9f65 Label persist/rfs recursively
+e5458dfe common: Fix sysfs_socinfo Label for sensors
+37a36ee0 common: Label persist.vendor.camera.debug.logfile
+2bccd127 sdm660: Generate contexts for rtc
+fcde3370 sepolicy: setting secontext to rtc node
+a870b256 sepolicy: Add rw permission for i2c touch sys node
+2e5d4f5b Use set_prop() macro for property sets
+5f259f40 sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS
+b59bea96 fixup! sepolicy: Remove rules for non legacy platforms
+4e5afc67 fixup! qcom: Label vendor files with (vendor|system/vendor) instead of vendor
+
+   * external/chromium-webview
+0f78a8f Update arm{,64} and x86 Chromium Webview to 100.0.4896.127
+
+   * frameworks/av
+43e35b0788 Merge pull request #21 from ShevT/12.1
+23cdba36d8 mediaresourcemanager_fuzzer: Bug Fix
+
+   * frameworks/base
+d2b47680b42d SystemUI: Fix alarm icon
+6861df0336b5 BluetoothControllerImpl: fetch battery level from any device
+fa4d53754d62 BluetoothControllerImpl: synchronize mConnectedDevices access
+
+====================
+     04-18-2022
+====================
+
+   * art
+9a48126fb3 Enable LoopOptimization for graphs with try catch blocks
+
+   * frameworks/base
+6290978a6f1f Merge pull request #823 from ShevT/12.1
+b807b9feffd3 Treat default value that wasn't found as empty value
+17ed7c4980ac Allow provisioning package to retrieve subGrp, clear it's own config
+70f8985b27f6 SystemUI: QSTileImpl: bail out early in handleLongClick if getLongClickIntent returns null
+f9408fab8cda SystemUI: Fix ripple animation for side fp devices
+
+   * packages/apps/Settings
+cd2ae04b06 Settings: Fixup start padding for battery usage graph
+
+====================
+     04-17-2022
+====================
+
+   * frameworks/base
+5655794aac13 SystemUI: Introduce OOS style notification clear all button [1/2]
+
+   * packages/apps/Settings
+9a0a750106 Settings: disable tips and support
+
+   * packages/apps/crDroidSettings
+54bc5a81 crdroid: Move hardcoded sensor-based Doze calibration timings to overlay
+690c3796 crdroid: Introduce OOS style notification clear all button [2/2]
+85d2a4f1 crdroid: Do not remove fp vib options for udfps
+
+   * prebuilts/abi-dumps/vndk
+67abbeea vndk: remove libcodec2.so from ABI check target
+
+====================
+     04-16-2022
+====================
+
+   * device/lineage/sepolicy
+8126887 Allow apps to access usap pool
+9d99a90 Revert "Allow apps to access usap pool"
+
+   * external/arm-optimized-routines
+9463095 Merge 'master' into 12.1
+
+   * frameworks/av
+5d6b12b692 CCodec: query color transfer request only when configured
+1bae287d80 codec2 hidl plugin: fix FilterWrapper param issues
+aff59d0da0 codec2: move static libcodec2_vndk dependencies into a default
+a5a201638f Codec2: Support locking vendor formats with gralloc4
+b901b8907c stagefright: add new Dolby Vision Levels
+072bdf5cd0 stagefright/extrators: Dolby Vision mp4 extractor update
+eebf6e0e54 Codec2: optimize plane copy for formats with depth > 8
+39020922af Remove volume_group conversions from PolicyAidlConversion
+0d18aee9cd stagefright: remove OMX dependency from Utils.cpp
+eb0dffb6af stagefright: MPEG4Writer: add support for Dolby Vision
+8a4599692a codec2: query supported pixel formats from Codec2InfoBuilder
+4c3f603f64 ColorConverter: convert P010 to RGBA_1010102
+e9bc27bab4 Explicitly initialise base class in copy constructor
+a38d28274e FrameDecoder:Add format details for RGBA1010102
+cb553b6a01 codec2: Add flexible 10-bit YUV support
+dabf9c52ce MediaCodec: Add HDR metrics.
+dfe15b1227 Fix mediaserver crash issue
+
+   * frameworks/base
+3d4a9d4b4442 media: MediaCodec: add RGBA_1010102 and RGBA_F16 format support
+d37f027024e3 Move PackageManager new user logic after dispatching
+2f351375c20d DisplayPowerController: Don't apply brightness adjustment if NaN
+0ad746af4a5f New Crowdin updates (#820)
+fec04fb251df Fixes and improvements for Black Theme
+e78ce4a4908c SystemUI: Black theme [1/3]
+851afd347d2a HeadsUp: Change heads up timeout to seconds
+
+   * packages/apps/Launcher3
+a411e11db3 New translations (#224)
+125966e3bc Launcher3: Skip suggestions on twoline labels
+1922a34a37 quickstep: return if recentsView is null
+
+   * packages/apps/Settings
+9b756e8921 Settings: Black theme [2/3]
+
+   * packages/apps/crDroidSettings
+d11ff23b New Crowdin updates (#909)
+239d3dc7 crdroid: Add strings for Black Theme
+6b981757 HeadsUp: add timeout option (2/2)
+
+   * vendor/addons
+10dd0aa addons: Black theme [3/3]
+
+====================
+     04-15-2022
+====================
+
+   * bionic
+3e8616b6b Revert "Keep allocation of `tail_` outside of LinkedList"
+07631d890 Revert "Change default block size alignment to be 4 for memory saving on 32-bit arch"
+ca01a564f Merge pull request #9 from ShevT/12.1
+1728a6519 Fix unistd.exec_argv0_null for new kernels.
+
+   * frameworks/base
+431c18b6ae30 HeadsUp: add timeout option (1/2)
+f24156d5fae1 Add custom handling for backup/restore of UIDS_ALLOWED_ON_RESTRICTED_NETWORKS
+ec690a56a5ea fixup! Implement backup/restore for network policy
+c5c2e25436b8 Revert "SettingsProvider: Add a UID list validator"
+cdcfb8aebcad Partially revert "Settings.Global: Add UIDS_ALLOWED_ON_RESTRICTED_NETWORKS"
+5316178b8915 New Crowdin updates (#817)
+
+   * packages/apps/GamingMode
+c35034b New translations (#13)
+
+   * packages/apps/Launcher3
+670ea437a5 New translations (#223)
+
+   * packages/apps/Settings
+6cd04ee527 Add toggle to switch bettween AOSP/Google battery graphs
+
+   * packages/apps/SetupWizard
+8605d88 Eye see what you did there
+f858e0c SetupWizard: Bring it on our side
+d173447 SUW: fix a crash in PhoneMonitor
+a2eadfb SetupWizard: Use correct updater package
+87ce2af Ship as crDroid based on LOS
+
+   * packages/apps/ThemePicker
+37be4de ThemePicker: respect color override
+d93bc3f ThemePicker: implement coloring in wallpaper preview fragment
+
+   * packages/apps/Updater
+876b9f2 New translations (#26)
+
+   * packages/apps/crDroidSettings
+b6f6731c New Crowdin updates (#907)
+
+   * system/core
+21339aae3 Merge pull request #6 from ShevT/12.1
+937ceb96f trusty_apploader: log to stderr
+ee5404ee0 Fix data lost in zram_swap if system rebooted
+
+   * system/memory/lmkd
+d8ff7d1 Merge pull request #1 from ShevT/12.1
+
+====================
+     04-14-2022
+====================
+
+   * bionic
+51d01105d Merge pull request #8 from ShevT/12.1
+e03ebd563 Avoid usage of LONG_BIT in signal headers.
+f7fb3a33d Skip other_malloc_functions on HWASan.
+e38cca9b2 Skip mallinfo / malloc_info tests on HWASan.
+e3eef486f Deprecate "/apex/<name>/ld.config.txt
+5ed1ffb6e Extempt calculate_gnu_hash_neon from hwasan.
+c5fad2a9f Fix bugs in realloc().
+87d679fd1 In android_set_abort_message, check for nullptr.
+
+   * device/lineage/atv
+c9eca84 TVLauncherNoGMS: Allow launcher to run with gms installed
+
+   * frameworks/av
+5cfa5354b9 Merge pull request #18 from ShevT/12.1
+d500c19302 Fix typo in return value
+7af09c723a Disable ABI check
+
+   * frameworks/base
+2c95f2c12e7c DeviceGroup: Check RSI data with filtered scan results
+24eda3b2d6ba Add smart idle maintenance service
+98fc8d3bea38 framework-sysconfig: Add deskclock to whitelist
+8dff6d5cb4b1 SystemUI: Add HBM provider for UDFPS on Pixel devices
+27490b5b2608 SystemUI: Import Pixel display interfaces
+25da814d08bb SystemUIGoogle-lib: Remove previously unused pixel display interface class
+
+   * system/vold
+f9b3cd1 Add interfaces required by smart idle maintenance service
+
+====================
+     04-13-2022
+====================
+
+   * android
+0b6b434 Merge 'lineage-19.1' into 12.1
+
+   * frameworks/base
+d0b5b75e3dc5 base: Set ic_avatar_user and ic_avatar_guest_user to follow system accent
+5ea1339b84d3 Fix google widget timing issue
+b5ec5cb87035 StatusBar: dismiss qs when screen's going off if showing
+abb164117693 SystemUI: Sort tiles as per usability
+
+   * packages/apps/Launcher3
+49e3f621fb Merge tag 'android-12.1.0_r4' into 12.1
+
+   * packages/apps/SetupWizard
+7ffdf8d SUW: fix setting USER_SETUP_COMPLETE
+
+====================
+     04-12-2022
+====================
+
+   * android
+01f4615 Track hardware/qcom-caf/bt
+784d799 manifest: Track our own system/libhidl
+
+   * packages/apps/Recorder
+9994f6d Recorder: use the Recordings-directory
+
+   * system/libhidl
+c147bfa libhidlmemory: mark as recovery_available
+
+====================
+     04-11-2022
+====================
+
+   * art
+97795e6e9b Merge pull request #3 from ShevT/12.1
+2729c79e82 Use the non-debug apex for userdebug builds
+3cbb2a7f2a Add Math.fma (double & float versions) intrinsics for arm64
+dd6e07d136 Support Math.fma Intrinsic for x86 and x86_64
+dedadad3b4 Simplify some functions in OatMethod.
+
+   * bionic
+1298cf155 Merge pull request #7 from ShevT/12.1
+4e297be56 Fix HWASan crashes in heapprofd initialization.
+5b8ff266b Fix recursive deadlock inside bionic_systrace
+ab0840006 Fix MemtagNoteTest and make it runnable on non-MTE devices.
+641af6c40 Fix copy pasta in guard macro for weak symbols.
+4dd457a93 Remove availability definitions for mbs APIs.
+0f54d91ae Fix incorrect API level for wcstombs and mbstowcs.
+8478165e7 Change default block size alignment to be 4 for memory saving on 32-bit arch
+88ecf22f6 Keep allocation of `tail_` outside of LinkedList
+fa8a673cd bionic: Make libstdc++ as product_available
+c0bddaf0c linker: Disable linker debugging
+2b17ec098 libm: sync with upstream.
+84b2c581e Fix possible nullptr dereference.
+
+   * external/arm-optimized-routines
+b3c0d1f pl/math: Add scalar log10
+e9e23e5 pl/math: Add scalar log10f
+
+   * frameworks/base
+96d07de4d875 fwb: [Bugfix] Fix the issue of transition animation splash screen in split screen mode.
+e4ecfafbdd15 SystemUI: Clean up default tiles
+
+   * frameworks/opt/telephony
+40a1adb266 Merge pull request #6 from ShevT/12.1
+cc8db942a9 Handle that an operator numeric can be null
+4f688a63d8 Bring back "Fix loading SIM phonebook redundantly"
+
+   * packages/apps/Backgrounds
+33c7967 New wallpapers
+
+   * system/memory/lmkd
+262e829 lmkd: Fix lowmem_minfree out of bounds
+
+====================
+     04-10-2022
+====================
+
+Short changelog:
+* Android April 2022 Security update (android-12.1.0_r4)
+* Fixed and re-added Google games dashboard
+* Added intial reTicker feature (crdroid > notifications)
+* Added Smart Pixels support (crdroid > UI)
+* Added toggle to disable fingerprint when screen off (crdroid > Lockscreen)
+* Revamped core app icons (clear launcher data to see them)
+* Improved adaptive battery support
+* sweet: Reworked refresh rate tile
+* sweet: Fixed per-app thermal settings layout
+* sweet: Added per-app refresh rate control
+* sweet: Added Dirac QS tile
+* sweet: Upstreamed kernel to v4.14.275 stable release
+* sweet: More fixes for mic issues
+
+==================================
+2nd April, 2022
+
+Short changelog:
+* Added various new themed icons for launcher
+* sweet: Fixed camera video recording regression
+* sweet: Fixed low mic volume issue
+* sweet: Added back refresh rate controls
+* sweet: Improved haptic feedback / vibration intensity
+* sweet: Added haptics feedback control (settings > sound)
+
+==================================
+1st April, 2022
+
+!! Clean flash required !!
+
+Short changelog:
+* Initial Android 12L release
+* Android March 2022 Security update (android-12.1.0_r2)
+* Updated arm optimized routines from upstream
+* Added launcher option to disable suggestions
+* sweet: Updated bluetooth, media and wifi configs from stock
+* sweet: Reworked display cutouts to prevent halo with camera
+* sweet: Upstreamed kernel to v4.14.273 stable release
+
+==================================
+7th March, 2022
+
+Short changelog:
+* Added toggle to disable QS on secure lockscreen
+* Added toggle to disable Power Menu on secure lockscreen
+* Added Airplane mode and Device control toggles for power menu
+* Added customization to hide clock on launcher screen
+* Added gesture navigation customizations
+* Added toggle to enable kill button on notification long press
+* Material You Design for Dialer, Messaging and DeskClock
+* Improved Hidden & Protected apps for launcher
+* sweet: Updated blobs from V13.0.3.0.SJUMIXM
+* sweet: Merged latest CAF tag LA.UM.9.1.r1-11700-SMxxx0.0 for kernel
+* sweet: Upstreamed kernel to v4.14.269 stable release
+* sweet: Fixed 64MP/108MP and front cam (BETA)
+
+==================================
+27th February, 2022
+
+Short changelog:
+* Added face unlock customization
+* Added toggle to combine wifi and mobile signal icons (A12)
+* Added timeout feature for wifi and bluetooth
+  (auto disable inactive wifi/bluetooth after specified time)
+* Added toggle to enable device spoof for FPS in select games (crdroid > misc)
+* Added toggle to disable device spoof for unlimited storage in Google Photos
+* Added settings to change volume dialog timeout
+* Added settings to change volume dialog on left/right
+* Added new Navbar styles for 3-button navbar (crdroid > UI)
+* Added new Outline icon pack (for system icons)
+* Added settings to change resolution/FPS for WiFi display output (cast settings)
+* Added Hidden & Protected apps for Launcher
+* Misc fixes and improvements for Data switch tile
+* Improvements for launcher dock searchbar
+* Fixed local update installation via Updater app
+* Trivial fixes and misc bionic optimizations
+* sweet: Switch to encrypted builds (Use provided recovery and Updater app)
+* sweet: Upstreamed kernel to v4.14.268 stable release
+
+==================================
+11th February, 2022
+
+Short changelog:
+* Android February 2022 Security update (android-12.0.0_r29)
+* Added Force Full Screen apps to customize hide notch bar per app
+* Added toggle in homescreen to theme icons on google searchbar in dock
+* Added per-app volume customization (Settings > Sound)
+* Added google lens icon to dock searchbar when installed
+* Added Cloudflare and Adguard DNS server options in Settings
+* Enabled USAP customization
+* Moved Extra Dim feature from accessibility to display under Settings
+* Fixes for data switch tile
+* Fixed music visualizer toggle under Display > Lockscreen
+* Fixed issues with statusbar/lockscreen DT2S toggle
+* Fixed issues with ripple animation on unlock toggle
+* sweet: Upstreamed kernel to v4.14.265 stable release
+* sweet: Merge CAF latest tag LA.UM.9.1.r1-11600-SMxxx0.0 for kernel
+* sweet: Updated kernel clang to latest google clang 14.0.2
+* sweet: Fixed few more sepolicy denials
+* sweet: Update blobs from V13.0.3.0.SKFEUXM 
+
+==================================
+5th February, 2022
+
+Short changelog:
+* Added screen off animation customization (crdroid > UI)
+* Added toggle to switch to old style mobile indicator (crdroid > statusbar)
+* Added pixel like google search bar for launcher
+* Fixed issue with launcher where icon would not disappear after uninstall
+* sweet: Upstreamed kernel to v4.14.264 stable release
+* sweet: Fixed SDM spam in logcat (probably save more battery)
+
+==================================
+1st February, 2022
+
+Short changelog:
+* Added Game Space - gaming mode (crdroid > misc OR long press tile)
+* Added in-call vibration toggle (crdroid > sound)
+* Added toggle to enable blink on call (crdroid > notifications)
+* Added toggle to force small clock on lockscreen
+* Added toggle to disable ripple effect on unlock
+* Added pixel navbar animation, enabled by default
+* Fixed Google search app crash on long press home button
+* Fixed glitchy charging info on lockscreen
+* Fixed few issues with gestural navbar where pill disappears
+* Added  customization to set different ringtones for multiple sims
+* Added new HarmonyOS font style + improved existing font overlays
+* Added new Pavlova UI icon pack
+* Added new icon shapes overlays
+* sweet: Massive blob and HIDL updates from V13.0.2.0.SKFMIXM 
+* sweet: Added ability to disable SIM card
+* sweet: Improved default color config (no more yellowish tint)
+* sweet: Added night light toggle / tile
+* sweet: Switched to SF phase duration/offsets from raven (better smoothness?)
+* sweet: Fixed various new sepolicy denials
+* sweet: Removed PM QoS optimizations to fix deep sleep issues in some instances
+* sweet: Slightly increase mic volume  (not tested)
+* sweet: Reworked cutout overlay
+
+==================================
+19th January, 2022
+
+Short changelog:
+* Added in-call vibration toggle (crdroid > sound)
+* Added deep sleep % info (settings > about)
+* Updated Launcher app with many more themed icons
+* Fixed FC in power menu customization
+
+==================================
+18th January, 2022
+
+Short changelog:
+* Added toggle to suppress notification sound when screen is on
+* Added toggles to disable location/camera/mic privacy indicators in statusbar
+* Added customization to run legacy apps in full screen (crdroid > UI)
+* Fixed monet theming issues (Reapply icon pack if issue persist)
+* Revamped UI for applying icon packs and font styles
+* Added customization to change signal icon and wifi icon styles
+* Added seekbar for setting animation values (settings > developer options) 
+* Added customization to set minimum interval between notification sounds
+  (app info > notifications > minimum time between notification)
+* Fixed battery glitch in QS panel
+* sweet: Adjust statusbar end padding (kill extra space on right)
+* sweet: PM QoS fixes and improvement (kernel)
+
+==================================
+16th January, 2022
+
+Short changelog:
+* Android January 2022 Security update (android-12.0.0_r27)
+* Added statusbar colored icon customization
+* Added statusbar notification count toggle
+* Added toggle to disable headsup for most apps
+* Added increasing ring volume toggle
+* Added option to choose battery percentage position (left/right)
+* Pulse visualizer fixes
+* OxgenOS icon pack improvements
+* Fixed battery estimate in QS
+* Reworked power menu customizations
+* Redesigned permission prompt dialog
+* Bionic, libcore and ART optimizations
+* sweet: Tuned cpu and gpu frequencies for better performance.
+* sweet: Fixed various sepolicy denials and neverallows
+* sweet: Tuned SF phase offsets for better responsiveness
+
+==================================
+12th January, 2022
+
+Short changelog:
+* Initial Release
