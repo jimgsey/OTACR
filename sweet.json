@@ -1,28 +1,27 @@
 {
-  "response": [
-    {
-        "maintainer": "Jimgsey",
-        "oem": "Redmi",
-        "device": "Redmi Note 10 Pro",
-        "filename": "crDroidAndroid-12.1-20220420-sweet-v8.4.zip",
-        "download": "https://sourceforge.net/projects/sweet10/files/Crdroid/Android-S/crDroidAndroid-12.1-20220420-sweet-v8.4.zip/download",
-        "timestamp": 1650468486,
-        "md5": "98654ef6a962a80a7f7d831dc9624c5f",
-        "sha256": "a32cabfcd332d6c30e46bc6f5de78cb9f073c4803f8a06423b765bfdb8815932",
-        "size": 1677356943,
-        "version": "8.4",
-        "buildtype": "weekly",
-        "forum": "https://jimgsey.github.io/",
-        "gapps": "https://sourceforge.net/projects/flamegapps/files/arm64/canary/android-12.1/",
-        "firmware": "https://sourceforge.net/projects/sweet10/files/FW/",
-        "modem": "",
-        "bootloader": "",
-        "recovery": "https://sourceforge.net/projects/sweet10/files/Recovery/",
-        "paypal": "http://paypal.me/jimgsey",
-        "telegram": "https://t.me/jimgsey",
-        "dt": "https://github.com/jimgsey",
-        "common-dt": "",
-        "kernel": "https://github.com/jimgsey"
-    }
-  ]
+	"response": [
+		{
+			"maintainer": "Jimgsey",
+			"oem": "Redmi",
+			"device": "Redmi Note 10 Pro/Max",
+			"filename": "crDroidAndroid-13.0-20230630-sweet-v9.6.zip",
+			"download": "https://sourceforge.net/projects/sweet10/files/Crdroid/Android-T/crDroidAndroid-13.0-20230630-sweet-v9.6.zip/download",
+			"timestamp": 1688112230,
+			"md5": "b16d7347483caa5673ab30d7fefa1174",
+			"sha256": "a782c7df1f8acf617dc67f81bfe57a847925e14310e2fe1ff6825fbe704ccb2a",
+			"size": 1743288535,
+			"version": "9.6",
+			"buildtype": "Weekly",
+			"forum": "https://jimgsey.github.io/",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "https://www.paypal.com/paypalme/jimgsey",
+			"telegram": "https://t.me/jimgsey",
+			"dt": "https://github.com/jimgsey",
+			"kernel": "https://github.com/jimgsey"
+		}
+	]
 }
