@@ -1,27 +1,28 @@
 {
-	"response": [
-		{
-			"maintainer": "Jimgsey",
-			"oem": "Redmi",
-			"device": "Redmi Note 10 Pro/Max",
-			"filename": "crDroidAndroid-13.0-20230730-sweet-v9.7.zip",
-			"download": "https://sourceforge.net/projects/sweet10/files/Crdroid/Android-T/crDroidAndroid-13.0-20230730-sweet-v9.7.zip/download",
-			"timestamp": 1690715854,
-			"md5": "02f96c67f674845a504723ea94df644e",
-			"sha256": "8c004a6d43e0d058ac981e3f1aa3e512ee2f0088d52240772a21d5242a59bc84",
-			"size": 1941926395,
-			"version": "9.7",
-			"buildtype": "Weekly",
-			"forum": "https://jimgsey.github.io/",
-			"gapps": "",
-			"firmware": "",
-			"modem": "",
-			"bootloader": "",
-			"recovery": "",
-			"paypal": "https://www.paypal.com/paypalme/jimgsey",
-			"telegram": "https://t.me/jimgsey",
-			"dt": "https://github.com/jimgsey",
-			"kernel": "https://github.com/jimgsey"
-		}
-	]
+  "response": [
+    {
+        "maintainer": "Jimgsey",
+        "oem": "Redmi",
+        "device": "Redmi Note 10 Pro",
+        "filename": "crDroidAndroid-14.0-20240101-sweet-v10.0.zip",
+        "download": "https://sourceforge.net/projects/sweet10/files/Crdroid/Android-S/crDroidAndroid-14.0-20240101-sweet-v10.0.zip/download",
+        "timestamp": ,
+        "md5": "",
+        "sha256": "",
+        "size": ,
+        "version": "10.0",
+        "buildtype": "weekly",
+        "forum": "https://jimgsey.github.io/",
+        "gapps": "https://sourceforge.net/projects/flamegapps/files/arm64/canary/android-12.1/",
+        "firmware": "https://sourceforge.net/projects/sweet10/files/FW/",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "https://sourceforge.net/projects/sweet10/files/Recovery/",
+        "paypal": "http://paypal.me/jimgsey",
+        "telegram": "https://t.me/jimgsey",
+        "dt": "https://github.com/jimgsey",
+        "common-dt": "",
+        "kernel": "https://github.com/jimgsey"
+    }
+  ]
 }
